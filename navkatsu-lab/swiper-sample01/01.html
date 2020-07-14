@@ -1,0 +1,94 @@
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>Swiper サンプル01</title>
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link rel="stylesheet" href="./css/highlight.js.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/sample.css">
+  <link rel="stylesheet" href="./css/sample01.css">
+
+  <script src="./js/highlight.js"></script>
+  <script src="./js/highlightjs-line-numbers.min.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/script.js"></script>
+
+</head>
+<body>
+<div class="l-wrapper">
+  <header class="l-header">
+    <div class="l-header-inner c-container">
+      <div class="l-header-logo">Swiper サンプル01</div>
+    </div><!-- .l-header-inner -->
+  </header><!-- .l-header -->
+
+  <div class="c-container">
+    <div class="sample sample01">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/img01.png"></div>
+          <div class="swiper-slide"><img src="./img/img02.png"></div>
+          <div class="swiper-slide"><img src="./img/img03.png"></div>
+        </div>
+          
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </div><!-- .sample -->
+
+    <p>HTML</p>
+<pre class="html"><code>
+&lt;div class="swiper-container"&gt;
+  &lt;div class="swiper-wrapper"&gt;
+    &lt;div class="swiper-slide"&gt;&lt;img src="./img/img01.png"&gt;&lt;/div&gt;
+    &lt;div class="swiper-slide"&gt;&lt;img src="./img/img02.png"&gt;&lt;/div&gt;
+    &lt;div class="swiper-slide"&gt;&lt;img src="./img/img03.png"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+    
+  &lt;div class="swiper-button-prev"&gt;&lt;/div&gt;
+  &lt;div class="swiper-button-next"&gt;&lt;/div&gt;
+
+  &lt;div class="swiper-pagination"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+    <p>CSS</p>
+<pre class="css"><code>
+.c-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  padding: 0 15px;
+}
+</code></pre>
+
+    <p>JavaScript</p>
+<pre class="js"><code>
+window.addEventListener('DOMContentLoaded', function() {
+  var swiper = new Swiper('sample01 .swiper-container', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    loop: true
+  });
+}, false);
+</code></pre>
+  </div><!-- .c-container -->
+</div><!-- .l-wrapper -->
+</body>
+</html>
